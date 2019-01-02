@@ -1,0 +1,57 @@
+object Form2: TForm2
+  Left = 406
+  Height = 215
+  Top = 208
+  Width = 255
+  Align = alTop
+  BorderStyle = bsToolWindow
+  ClientHeight = 215
+  ClientWidth = 255
+  Color = clForm
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '1.6.4.0'
+  object SpeedButton1: TSpeedButton
+    Left = 0
+    Height = 32
+    Top = 183
+    Width = 255
+    Align = alBottom
+    Caption = 'Cerrar'
+    Flat = True
+    OnClick = SpeedButton1Click
+  end
+  object DBGrid2: TDBGrid
+    Left = 0
+    Height = 183
+    Top = 0
+    Width = 255
+    Align = alClient
+    BorderStyle = bsNone
+    Color = clWhite
+    Columns = <    
+      item
+        Alignment = taCenter
+        Title.Caption = 'FECHA'
+        Width = 80
+        FieldName = 'FECHA'
+      end    
+      item
+        Alignment = taCenter
+        Title.Caption = 'HORAS'
+        Width = 150
+        FieldName = 'HORAS'
+      end>
+    DataSource = DataModule1.DataSource2
+    FixedCols = 0
+    Options = [dgColumnResize, dgColumnMove, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    Scrollbars = ssVertical
+    TabOrder = 0
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Height = -13
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+  end
+end
