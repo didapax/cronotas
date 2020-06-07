@@ -140,7 +140,7 @@ procedure TForm1.BeepMe;
 var sb, Rruta:string;
 begin
   {$IFDEF WINDOWS}
-        sndPlaySound('rin.wav', snd_Async or snd_NoDefault);
+        //sndPlaySound('rin.wav', snd_Async or snd_NoDefault);
   {$ENDIF}
    {$IFDEF UNIX}
       midir:=SysUtils.GetEnvironmentVariable('USER');
